@@ -13,7 +13,7 @@ export const Default: StoryObj<ButtonProps> = {
   args: {},
 }
 
-export const Big: StoryObj = {
+export const Big: StoryObj<ButtonProps> = {
   args: {
     size: 'big',
   },
