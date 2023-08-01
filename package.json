@@ -3,9 +3,11 @@
   "workspaces": [
     "packages/*"
   ],
-  "devDependencies": {},
+  "devDependencies": {
+    "turbo": "^1.10.12"
+  },
   "scripts": {
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "dev": "turbo run dev && turbo run storybook --parallel",
+    "build": "turbo run build"
   }
 }
