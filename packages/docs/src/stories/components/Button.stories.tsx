@@ -10,7 +10,9 @@ export default {
 } as Meta<ButtonProps>
 
 export const Default: StoryObj<ButtonProps> = {
-  args: {},
+  args: {
+    size: 'small',
+  },
 }
 
 export const Big: StoryObj<ButtonProps> = {
