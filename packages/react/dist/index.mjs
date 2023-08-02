@@ -142,6 +142,15 @@ var Button = styled("button", {
     size: "small"
   }
 });
+
+// src/components/Box/index.tsx
+var Box = styled("div", {
+  padding: "$4",
+  borderRadius: "$md",
+  backgroundColor: "$gray800",
+  border: "1px solid $gray600"
+});
 export {
+  Box,
   Button
 };
