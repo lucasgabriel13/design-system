@@ -39,6 +39,7 @@ var src_exports = {};
 __export(src_exports, {
   Box: () => Box,
   Button: () => Button,
+  Heading: () => Heading,
   Text: () => Text
 });
 module.exports = __toCommonJS(src_exports);
@@ -203,9 +204,33 @@ var Text = styled("p", {
     size: "md"
   }
 });
+
+// src/components/Heading/index.tsx
+var Heading = styled("h2", {
+  fontFamily: "$default",
+  lineHeight: "$shorter",
+  margin: 0,
+  color: "$gray100",
+  variants: {
+    size: {
+      sm: { fontSize: "$xl" },
+      md: { fontSize: "$2xl" },
+      lg: { fontSize: "$4xl" },
+      "2xl": { fontSize: "$5xl" },
+      "3xl": { fontSize: "$6xl" },
+      "4xl": { fontSize: "$7xl" },
+      "5xl": { fontSize: "$8xl" },
+      "6xl": { fontSize: "$9xl" }
+    }
+  },
+  defaultVariants: {
+    size: "md"
+  }
+});
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Box,
   Button,
+  Heading,
   Text
 });
