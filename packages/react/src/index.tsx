@@ -9,3 +9,6 @@ export type { TextProps } from './components/Text'
 
 export { Heading } from './components/Heading'
 export type { HeadingProps } from './components/Heading'
+
+export { Avatar } from './components/Avatar'
+export type { AvatarProps } from './components/Avatar'
