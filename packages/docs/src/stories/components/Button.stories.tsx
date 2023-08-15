@@ -1,22 +1,51 @@
 import type { StoryObj, Meta } from '@storybook/react'
 import { Button, ButtonProps } from '@ignite-ui/react'
+import { GoogleLogo } from 'phosphor-react'
 
 export default {
   title: 'Form/Button',
   component: Button,
   args: {
-    children: 'Label',
+    children: 'Send',
   },
 } as Meta<ButtonProps>
 
-export const Default: StoryObj<ButtonProps> = {
+export const Primary: StoryObj<ButtonProps> = {}
+
+export const Secondary: StoryObj<ButtonProps> = {
   args: {
-    size: 'small',
+    variant: 'secondary',
+    children: 'Create',
   },
 }
 
-export const Big: StoryObj<ButtonProps> = {
+export const Tertiary: StoryObj<ButtonProps> = {
   args: {
-    size: 'big',
+    variant: 'tertiary',
+    children: 'Cancel',
+  },
+}
+
+export const Small: StoryObj<ButtonProps> = {
+  args: {
+    variant: 'primary',
+    children: 'Small',
+    size: 'sm',
+  },
+}
+
+export const Disable: StoryObj<ButtonProps> = {
+  args: {
+    disabled: true,
+  },
+}
+
+export const WithIcon: StoryObj<ButtonProps> = {
+  args: {
+    children: (
+      <>
+        <GoogleLogo weight="bold" /> Sign in with Google
+      </>
+    ),
   },
 }

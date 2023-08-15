@@ -3260,26 +3260,72 @@ var {
 
 // src/components/Button/index.tsx
 var Button = styled("button", {
+  all: "unset",
+  borderRadius: "$sm",
+  fontSize: "$sm",
+  fontWeight: "$medium",
   fontFamily: "$default",
-  background: "$ignite500",
-  borderRadius: "$md",
-  border: 0,
-  fontWeight: "$bold",
-  color: "$white",
+  textAlign: "center",
+  minWidth: 120,
+  boxSizing: "border-box",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: "$2",
+  cursor: "pointer",
+  padding: "0 $4",
+  svg: {
+    width: "$4",
+    height: "$4"
+  },
+  "&:disabled": {
+    background: "$gray200",
+    cursor: "not-allowed"
+  },
   variants: {
-    size: {
-      small: {
-        fontSize: 14,
-        padding: "$2 $4"
+    variant: {
+      primary: {
+        color: "$white",
+        background: "$ignite500",
+        "&:not(:disabled):hover": {
+          background: "$ignite300"
+        }
       },
-      big: {
-        fontSize: 16,
-        padding: "$3 $6"
+      secondary: {
+        color: "$ignite300",
+        border: "2px solid $ignite500",
+        "&:not(:disabled):hover": {
+          background: "$ignite500",
+          color: "$white"
+        },
+        "&:disabled": {
+          color: "$gray200",
+          borderColor: "$gray200"
+        }
+      },
+      tertiary: {
+        color: "$gray100",
+        "&:not(:disabled):hover": {
+          color: "$white"
+        },
+        "&:disabled": {
+          color: "$gray600",
+          borderColor: "$gray600"
+        }
+      }
+    },
+    size: {
+      sm: {
+        height: 38
+      },
+      md: {
+        height: 46
       }
     }
   },
   defaultVariants: {
-    size: "small"
+    variant: "primary",
+    size: "md"
   }
 });
 
