@@ -14,3 +14,5 @@ export const Avatar = (props: AvatarProps) => {
     </AvataContainer>
   )
 }
+
+Avatar.displayName = 'Avatar'
