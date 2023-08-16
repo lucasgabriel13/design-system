@@ -21,3 +21,6 @@ export type { TextAreaProps } from './components/TextArea'
 
 export { Checkbox } from './components/Checkbox'
 export type { CheckboxProps } from './components/Checkbox'
+
+export { MultiStep } from './components/MultiStep'
+export type { MultiStepProps } from './components/MultiStep'
