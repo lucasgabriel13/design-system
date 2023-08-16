@@ -15,6 +15,6 @@ export const Default: StoryObj<AvatarProps> = {}
 
 export const WithFallback: StoryObj<AvatarProps> = {
   args: {
-    src: undefined,
+    src: '',
   },
 }

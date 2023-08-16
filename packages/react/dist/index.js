@@ -3295,7 +3295,6 @@ var Button = styled("button", {
     height: "$4"
   },
   "&:disabled": {
-    background: "$gray200",
     cursor: "not-allowed"
   },
   variants: {
@@ -3303,6 +3302,9 @@ var Button = styled("button", {
       primary: {
         color: "$white",
         background: "$ignite500",
+        "&:disabled": {
+          background: "$gray200"
+        },
         "&:not(:disabled):hover": {
           background: "$ignite300"
         }
@@ -3311,7 +3313,7 @@ var Button = styled("button", {
         color: "$ignite300",
         border: "2px solid $ignite500",
         "&:not(:disabled):hover": {
-          background: "$ignite500",
+          border: "2px solid $ignite500",
           color: "$white"
         },
         "&:disabled": {
