@@ -18,3 +18,6 @@ export type { TextInputProps } from './components/TextInput'
 
 export { TextArea } from './components/TextArea'
 export type { TextAreaProps } from './components/TextArea'
+
+export { Checkbox } from './components/Checkbox'
+export type { CheckboxProps } from './components/Checkbox'
