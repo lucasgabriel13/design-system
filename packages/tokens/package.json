@@ -1,6 +1,6 @@
 {
-  "name": "@ignite-ui/tokens",
-  "version": "1.0.0",
+  "name": "@lg-design-system/tokens",
+  "version": "2.0.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -14,8 +14,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@ignite-ui/ts-config": "*",
-    "@ignite-ui/eslint-config": "*",
+    "@lg-design-system/ts-config": "*",
+    "@lg-design-system/eslint-config": "*",
     "tsup": "^7.1.0",
     "typescript": "^5.1.6"
   }

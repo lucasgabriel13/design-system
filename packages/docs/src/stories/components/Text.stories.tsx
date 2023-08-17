@@ -1,6 +1,6 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Text, TextProps } from '@ignite-ui/react'
-import { fontSizes } from '@ignite-ui/tokens'
+import { Text, TextProps } from '@lg-design-system/react'
+import { fontSizes } from '@lg-design-system/tokens'
 
 export default {
   title: 'Typography/Text',

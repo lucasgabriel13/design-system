@@ -1,6 +1,6 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Heading, HeadingProps } from '@ignite-ui/react'
-import { fontSizes } from '@ignite-ui/tokens'
+import { Heading, HeadingProps } from '@lg-design-system/react'
+import { fontSizes } from '@lg-design-system/tokens'
 
 export default {
   title: 'Typography/Heading',
