@@ -9,6 +9,7 @@ declare const colors: {
     gray700: string;
     gray800: string;
     gray900: string;
+    ignite200: string;
     ignite300: string;
     ignite500: string;
     ignite700: string;
