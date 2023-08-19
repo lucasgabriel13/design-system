@@ -1,5 +1,11 @@
 # @lg-design-system/react
 
+## 4.0.0
+
+### Major Changes
+
+- Added Tooltip and Toast component
+
 ## 3.0.1
 
 ### Patch Changes

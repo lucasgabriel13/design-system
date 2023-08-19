@@ -25,4 +25,10 @@ export type { CheckboxProps } from './components/Checkbox'
 export { MultiStep } from './components/MultiStep'
 export type { MultiStepProps } from './components/MultiStep'
 
+export { Tooltip } from './components/Tooltip'
+export type { TooltipProps } from './components/Tooltip'
+
+export { Toast } from './components/Toast'
+export type { ToastProps } from './components/Toast'
+
 export * from './styles'

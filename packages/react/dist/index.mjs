@@ -3131,11 +3131,11 @@ var require_react_jsx_runtime_development = __commonJS({
             return jsxWithValidation(type, props, key, false);
           }
         }
-        var jsx5 = jsxWithValidationDynamic;
-        var jsxs4 = jsxWithValidationStatic;
+        var jsx7 = jsxWithValidationDynamic;
+        var jsxs6 = jsxWithValidationStatic;
         exports.Fragment = REACT_FRAGMENT_TYPE;
-        exports.jsx = jsx5;
-        exports.jsxs = jsxs4;
+        exports.jsx = jsx7;
+        exports.jsxs = jsxs6;
       })();
     }
   }
@@ -3636,6 +3636,88 @@ var MultiStep = ({ size, currentStep = 1 }) => {
   ] });
 };
 MultiStep.displayName = "MultiStep";
+
+// src/components/Tooltip/index.tsx
+import * as TooltipRadix from "@radix-ui/react-tooltip";
+
+// src/components/Tooltip/styles.ts
+import * as Tooltip from "@radix-ui/react-tooltip";
+var TooltipContent = styled(Tooltip.Content, {
+  padding: "$3 $4",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  color: "$white",
+  background: "$gray900",
+  borderRadius: "5px",
+  fontFamily: "$default",
+  fontSize: "$sm"
+});
+
+// src/components/Tooltip/index.tsx
+var import_jsx_runtime5 = __toESM(require_jsx_runtime());
+var Tooltip2 = ({ label, component }) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(TooltipRadix.Provider, { children: /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(TooltipRadix.Root, { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(TooltipRadix.Trigger, { asChild: true, children: component }),
+    /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(TooltipRadix.Portal, { children: /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(TooltipContent, { children: [
+      label,
+      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(TooltipRadix.Arrow, {})
+    ] }) })
+  ] }) });
+};
+
+// src/components/Toast/index.tsx
+import * as ToastRadix from "@radix-ui/react-toast";
+
+// src/components/Toast/styles.ts
+import * as Toast from "@radix-ui/react-toast";
+var ToastContainer = styled(Toast.Root, {
+  maxWidth: 320,
+  padding: "$3 $5",
+  background: "$gray800",
+  border: "1px solid $gray600",
+  borderRadius: "$sm",
+  position: "relative",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "flex-start",
+  gap: "$1"
+});
+var Title2 = styled(Toast.Title, {
+  fontFamily: "$default",
+  fontSize: "$xl",
+  fontWeight: "$bold",
+  color: "$white"
+});
+var Subtitle = styled(Toast.Description, {
+  fontFamily: "$default",
+  fontSize: "$sm",
+  fontWeight: "$bold",
+  color: "$gray200"
+});
+var ButtonClose = styled(Toast.Close, {
+  width: "$5",
+  height: "$5",
+  all: "unset",
+  position: "absolute",
+  top: "$4",
+  right: "$4",
+  color: "$gray200"
+});
+
+// src/components/Toast/index.tsx
+var import_jsx_runtime6 = __toESM(require_jsx_runtime());
+import { X } from "phosphor-react";
+var Toast2 = ({ title, subtitle, open, onClose }) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(ToastRadix.Provider, { children: [
+    /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(ToastContainer, { open, children: [
+      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(Title2, { children: title }),
+      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(Subtitle, { children: subtitle }),
+      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(ButtonClose, { onClick: onClose, children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(X, {}) })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(ToastRadix.Viewport, {})
+  ] });
+};
 export {
   Avatar2 as Avatar,
   Box,
@@ -3646,6 +3728,8 @@ export {
   Text,
   TextArea,
   TextInput,
+  Toast2 as Toast,
+  Tooltip2 as Tooltip,
   config,
   createTheme,
   css,
