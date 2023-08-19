@@ -1,5 +1,11 @@
 # @lg-design-system/react
 
+## 4.0.1
+
+### Patch Changes
+
+- Fixed subtitle weight
+
 ## 4.0.0
 
 ### Major Changes

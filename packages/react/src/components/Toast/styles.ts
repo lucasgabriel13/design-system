@@ -26,7 +26,7 @@ export const Title = styled(Toast.Title, {
 export const Subtitle = styled(Toast.Description, {
   fontFamily: '$default',
   fontSize: '$sm',
-  fontWeight: '$bold',
+  fontWeight: '$regular',
   color: '$gray200',
 })
 
