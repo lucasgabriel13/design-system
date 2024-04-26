@@ -6,8 +6,11 @@ O projeto Design System foi desenvolvido para simular um design system existente
 componentes que serão utilizado em seus projetos.
 
 Acesse o projeto: [clique aqui](https://lucasgabriel13.github.io/design-system/?path=/docs/home--docs)
+
 Baixe utilizando o NPM:
+
 [Componentes](https://www.npmjs.com/package/@lg-design-system/react)
+
 [Tokens](https://www.npmjs.com/package/@lg-design-system/tokens)
 
 ## ✨ Tecnologias
